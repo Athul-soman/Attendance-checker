@@ -2,9 +2,9 @@ It is a simple C program to check how much hours need to secure our attendance
 
 
 
-Example use 
+#Example use 
 
-# AttenHours you attended: 40
+AttenHours you attended: 40
 Total hours: 60
 Enter your minimum percentage: 75
 Present 40 Total 60 = 66.67%
