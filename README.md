@@ -6,8 +6,11 @@ It is a simple C program to check how much hours need to secure our attendance
 
 
 Hours you attented: 10
+
 Total hours: 18
+
 Enter your minimum percentage: 75
+
 present 10 Total 18 = 55.56 
 present 11 Total 19 = 57.89 
 present 12 Total 20 = 60.00 
