@@ -1,6 +1,7 @@
 It is a simple C program to check how much hours need to secure our attendance 
 
 
+
 Example use 
 
 # AttenHours you attended: 40
