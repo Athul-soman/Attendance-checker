@@ -16,7 +16,7 @@ int main() {
     if(T<P){
         printf("Total hours must be greater than attented hours\n Try again \n");
     
-        
+     return 1;   
     }
     i=P;
     k=T;
