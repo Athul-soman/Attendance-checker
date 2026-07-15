@@ -1,12 +1,18 @@
+
 #include <stdio.h>
 
 int main() {
-    float att=0,i=0,k=0;
-    int P,T;
+     //declare variables
+    float att=0,i=0,k=0,Pass=0;
+    int P,T,Min;
+//read datas
     printf("Hours you attented: ");
     scanf("%d",&P);
     printf("Total hours: ");
     scanf("%d",&T);
+    printf("Enter your minimum percentage: ");
+    scanf("%d",&Min);
+//error check
     if(T<P){
         printf("Total hours must be greater than attented hours\n Try again \n");
     
@@ -14,20 +20,25 @@ int main() {
     }
     i=P;
     k=T;
-    while(att<=75.00)
+    Pass=Min*1.0;
+    while(att<=Pass)
     {
         printf("present %.0f Total %.0f ",i,k);
-      if(att>=75.00){
-        printf("\n===============\nattendence will %.2f if you attend %.0f hours in %.0f hours",att,i-1,k-1);
-    break;
-    break;
-    }
-    else{
+      
+    
+    if(att<Pass){
          att = (i*1.0/k)*100;
          printf("= %.2f \n",att);
         }
-        i=i+1;
-        k=k+1;
+        if(att>=Pass){
+        printf("\n===============\nattendence will %.2f if you attend %.0f hours out of  %.0f hours",att,i,k);
+        
+        
+        break;
+        
+    }
+    i++;
+    k++;
     }
      return 0;
 }
