@@ -32,6 +32,8 @@ int main() {
         }
         if(att>=Pass){
         printf("\n===============\nattendence will %.2f if you attend %.0f hours out of  %.0f hours",att,i,k);
+
+printf("\n You must attend next %.0f hour classes",k-T);
         
         
         break;
